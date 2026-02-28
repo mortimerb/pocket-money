@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Pocket Money</title>
+<meta name="theme-color" content="#fce7f3">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pocket Money">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEwMCIgZmlsbD0iI2ZjZTdmMyIvPgogIDxlbGxpcHNlIGN4PSIyNDAiIGN5PSIyOTAiIHJ4PSIxNjAiIHJ5PSIxMzAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8Y2lyY2xlIGN4PSIzNzAiIGN5PSIyMjAiIHI9IjgwIiBmaWxsPSIjZjlhOGQ0Ii8+CiAgPGVsbGlwc2UgY3g9IjQxMCIgY3k9IjI1MCIgcng9IjM1IiByeT0iMjgiIGZpbGw9IiNmNDcyYjYiLz4KICA8Y2lyY2xlIGN4PSI0MDAiIGN5PSIyNTAiIHI9IjciIGZpbGw9IiNkYjI3NzciLz4KICA8Y2lyY2xlIGN4PSI0MjAiIGN5PSIyNTAiIHI9IjciIGZpbGw9IiNkYjI3NzciLz4KICA8Y2lyY2xlIGN4PSIzNTUiIGN5PSIyMDAiIHI9IjEyIiBmaWxsPSJ3aGl0ZSIvPgogIDxjaXJjbGUgY3g9IjM1OCIgY3k9IjIwMCIgcj0iNyIgZmlsbD0iIzFlMjkzYiIvPgogIDxlbGxpcHNlIGN4PSIzNTUiIGN5PSIxNDgiIHJ4PSIyMiIgcnk9IjI4IiBmaWxsPSIjZjlhOGQ0Ii8+CiAgPGVsbGlwc2UgY3g9IjM1NSIgY3k9IjE1MCIgcng9IjEzIiByeT0iMTgiIGZpbGw9IiNmNDcyYjYiLz4KICA8cmVjdCB4PSIyMDAiIHk9IjE2NSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2RiMjc3NyIvPgogIDxjaXJjbGUgY3g9IjIzMCIgY3k9IjE1OCIgcj0iMTgiIGZpbGw9IiNmYmJmMjQiLz4KICA8dGV4dCB4PSIyMzAiIHk9IjE2NCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzkyNDAwZSIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+JDwvdGV4dD4KICA8cmVjdCB4PSIxNTAiIHk9IjM5MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjU1IiByeD0iMjAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8cmVjdCB4PSIyMTAiIHk9IjQwMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjU1IiByeD0iMjAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8cmVjdCB4PSIyNzAiIHk9IjQwMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjU1IiByeD0iMjAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8cmVjdCB4PSIzMzAiIHk9IjM5MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjU1IiByeD0iMjAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8cGF0aCBkPSJNODAgMjcwIFE1MCAyMzAgNzAgMjAwIFE5MCAxNzAgODAgMTUwIiBzdHJva2U9IiNmNDcyYjYiIHN0cm9rZS13aWR0aD0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=">
+<link rel="manifest" id="manifest-placeholder">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: linear-gradient(135deg, #f0f9ff 0%, #fdf2f8 100%);
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    padding: 24px 16px 48px;
+  }
+  h1 { font-family: 'Fredoka One', cursive; font-size: 30px; color: #1e293b; text-align: center; margin-bottom: 4px; }
+  #subtitle { text-align: center; font-size: 13px; color: #94a3b8; margin-bottom: 20px; }
+  .emoji-header { font-size: 36px; text-align: center; margin-bottom: 4px; }
+  .cards { display: flex; flex-direction: column; gap: 20px; max-width: 480px; margin: 0 auto; }
+
+  .settings-bar {
+    max-width: 480px; margin: 0 auto 24px;
+    background: white; border-radius: 20px; padding: 16px 20px;
+    border: 2px solid #e2e8f0;
+  }
+  .settings-title { font-size: 12px; font-weight: 800; color: #94a3b8; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
+  .settings-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  .settings-row:last-child { margin-bottom: 0; }
+  .kid-label { font-size: 12px; font-weight: 800; width: 60px; }
+  .jonas-label { color: #3B82F6; }
+  .ella-label  { color: #EC4899; }
+  .both-label  { color: #64748b; }
+  .settings-input {
+    width: 75px; padding: 7px 10px; border-radius: 10px;
+    border: 2px solid #e2e8f0; font-family: 'Nunito', sans-serif;
+    font-size: 15px; font-weight: 800; color: #1e293b; outline: none; text-align: center;
+  }
+  .settings-input:focus { border-color: #a78bfa; }
+  .unit-label { font-size: 12px; color: #94a3b8; font-weight: 700; }
+  .save-btn {
+    padding: 7px 16px; border-radius: 10px; border: none;
+    background: #7c3aed; color: white;
+    font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 13px; cursor: pointer;
+  }
+  .save-confirm { font-size: 12px; color: #7c3aed; font-weight: 800; opacity: 0; transition: opacity 0.3s; margin-left: 4px; }
+  .save-confirm.show { opacity: 1; }
+  .toggle-row { display: flex; align-items: center; gap: 6px; margin-bottom: 12px; cursor: pointer; }
+  .toggle-row input { cursor: pointer; accent-color: #7c3aed; }
+  .toggle-label { font-size: 13px; color: #64748b; font-weight: 700; user-select: none; }
+
+  .card { background: white; border-radius: 28px; padding: 28px 24px; display: flex; flex-direction: column; gap: 16px; }
+  .card.jonas { border: 3px solid #3B82F6; box-shadow: 0 8px 32px #3B82F622; }
+  .card.ella  { border: 3px solid #EC4899; box-shadow: 0 8px 32px #EC489922; }
+  .card-header { display: flex; align-items: center; gap: 12px; }
+  .avatar { width: 52px; height: 52px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0; }
+  .jonas .avatar { background: #DBEAFE; }
+  .ella  .avatar { background: #FCE7F3; }
+  .kid-name { font-family: 'Fredoka One', cursive; font-size: 22px; }
+  .jonas .kid-name { color: #3B82F6; }
+  .ella  .kid-name { color: #EC4899; }
+  .next-topup { font-size: 11px; color: #94a3b8; font-weight: 700; }
+  .balance-box { border-radius: 20px; padding: 16px 20px; text-align: center; }
+  .jonas .balance-box { background: #DBEAFE; }
+  .ella  .balance-box { background: #FCE7F3; }
+  .balance-label { font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; }
+  .jonas .balance-label { color: #3B82F6; }
+  .ella  .balance-label { color: #EC4899; }
+  .balance-amount { font-family: 'Fredoka One', cursive; font-size: 42px; line-height: 1.1; }
+  .jonas .balance-amount { color: #3B82F6; }
+  .ella  .balance-amount { color: #EC4899; }
+  .mode-btns { display: flex; gap: 8px; }
+  .mode-btn { flex: 1; padding: 8px 0; border-radius: 12px; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 13px; cursor: pointer; transition: all 0.15s; }
+  .jonas .mode-btn { border: 2px solid #3B82F6; color: #3B82F6; background: white; }
+  .ella  .mode-btn { border: 2px solid #EC4899; color: #EC4899; background: white; }
+  .jonas .mode-btn.active { background: #3B82F6; color: white; }
+  .ella  .mode-btn.active { background: #EC4899; color: white; }
+  .input-row { display: flex; gap: 8px; }
+  .input-row input[type=number] { flex: 1; }
+  input[type=number], input[type=text] { padding: 10px 14px; border-radius: 12px; font-family: 'Nunito', sans-serif; font-size: 15px; color: #1e293b; outline: none; width: 100%; }
+  .jonas input { border: 2px solid #3B82F644; }
+  .ella  input { border: 2px solid #EC489944; }
+  input[type=text] { font-size: 13px; color: #64748b; }
+  .ok-btn { padding: 10px 18px; border-radius: 12px; border: none; color: white; font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 15px; cursor: pointer; white-space: nowrap; }
+  .jonas .ok-btn { background: #3B82F6; }
+  .ella  .ok-btn { background: #EC4899; }
+  .history-title { font-size: 12px; font-weight: 800; color: #94a3b8; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+  .history-list { display: flex; flex-direction: column; gap: 6px; max-height: 200px; overflow-y: auto; }
+  .history-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; border-radius: 10px; }
+  .history-item.subtract { background: #FFF1F2; }
+  .history-item.add, .history-item.init { background: #F0FDF4; }
+  .jonas .history-item.weekly { background: #DBEAFE; }
+  .ella  .history-item.weekly { background: #FCE7F3; }
+  .history-note { font-weight: 700; font-size: 12px; color: #334155; }
+  .history-date { font-size: 10px; color: #94a3b8; }
+  .history-amount { font-family: 'Fredoka One', cursive; font-size: 15px; }
+  .history-amount.positive.jonas { color: #3B82F6; }
+  .history-amount.positive.ella  { color: #EC4899; }
+  .history-amount.negative { color: #f43f5e; }
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<div class="emoji-header">🐷💰🐷</div>
+<h1>Pocket Money</h1>
+<p id="subtitle"></p>
+
+<!-- Settings -->
+<div class="settings-bar">
+  <div class="settings-title">⚙️ Weekly Allowance</div>
+  <label class="toggle-row">
+    <input type="checkbox" id="per-kid-toggle">
+    <span class="toggle-label">Set a different amount per kid</span>
+  </label>
+
+  <!-- Same for both -->
+  <div id="same-row" class="settings-row">
+    <span class="kid-label both-label">Both:</span>
+    <input type="number" class="settings-input" id="weekly-both" min="0" step="0.25" value="1.00">
+    <span class="unit-label">CA$ / week</span>
+  </div>
+
+  <!-- Per kid -->
+  <div id="per-kid-rows" style="display:none;">
+    <div class="settings-row">
+      <span class="kid-label jonas-label">🚀 Jonas:</span>
+      <input type="number" class="settings-input" id="weekly-jonas" min="0" step="0.25" value="1.00">
+      <span class="unit-label">CA$ / week</span>
+    </div>
+    <div class="settings-row">
+      <span class="kid-label ella-label">🌸 Ella:</span>
+      <input type="number" class="settings-input" id="weekly-ella" min="0" step="0.25" value="1.00">
+      <span class="unit-label">CA$ / week</span>
+    </div>
+  </div>
+
+  <div class="settings-row" style="margin-top:4px;">
+    <button class="save-btn" onclick="saveSettings()">Save</button>
+    <span class="save-confirm" id="save-confirm">✓ Saved!</span>
+  </div>
+</div>
+
+<div class="cards" id="cards"></div>
+
+<script>
+// PWA manifest
+const iconB64 = 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEwMCIgZmlsbD0iI2ZjZTdmMyIvPgogIDxlbGxpcHNlIGN4PSIyNDAiIGN5PSIyOTAiIHJ4PSIxNjAiIHJ5PSIxMzAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8Y2lyY2xlIGN4PSIzNzAiIGN5PSIyMjAiIHI9IjgwIiBmaWxsPSIjZjlhOGQ0Ii8+CiAgPGVsbGlwc2UgY3g9IjQxMCIgY3k9IjI1MCIgcng9IjM1IiByeT0iMjgiIGZpbGw9IiNmNDcyYjYiLz4KICA8Y2lyY2xlIGN4PSI0MDAiIGN5PSIyNTAiIHI9IjciIGZpbGw9IiNkYjI3NzciLz4KICA8Y2lyY2xlIGN4PSI0MjAiIGN5PSIyNTAiIHI9IjciIGZpbGw9IiNkYjI3NzciLz4KICA8Y2lyY2xlIGN4PSIzNTUiIGN5PSIyMDAiIHI9IjEyIiBmaWxsPSJ3aGl0ZSIvPgogIDxjaXJjbGUgY3g9IjM1OCIgY3k9IjIwMCIgcj0iNyIgZmlsbD0iIzFlMjkzYiIvPgogIDxlbGxpcHNlIGN4PSIzNTUiIGN5PSIxNDgiIHJ4PSIyMiIgcnk9IjI4IiBmaWxsPSIjZjlhOGQ0Ii8+CiAgPGVsbGlwc2UgY3g9IjM1NSIgY3k9IjE1MCIgcng9IjEzIiByeT0iMTgiIGZpbGw9IiNmNDcyYjYiLz4KICA8cmVjdCB4PSIyMDAiIHk9IjE2NSIgd2lkdGg9IjYwIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0iI2RiMjc3NyIvPgogIDxjaXJjbGUgY3g9IjIzMCIgY3k9IjE1OCIgcj0iMTgiIGZpbGw9IiNmYmJmMjQiLz4KICA8dGV4dCB4PSIyMzAiIHk9IjE2NCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzkyNDAwZSIgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXdlaWdodD0iYm9sZCI+JDwvdGV4dD4KICA8cmVjdCB4PSIxNTAiIHk9IjM5MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjU1IiByeD0iMjAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8cmVjdCB4PSIyMTAiIHk9IjQwMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjU1IiByeD0iMjAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8cmVjdCB4PSIyNzAiIHk9IjQwMCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjU1IiByeD0iMjAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8cmVjdCB4PSIzMzAiIHk9IjM5MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjU1IiByeD0iMjAiIGZpbGw9IiNmOWE4ZDQiLz4KICA8cGF0aCBkPSJNODAgMjcwIFE1MCAyMzAgNzAgMjAwIFE5MCAxNzAgODAgMTUwIiBzdHJva2U9IiNmNDcyYjYiIHN0cm9rZS13aWR0aD0iMTAiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4=';
+const manifest = { name:'Pocket Money', short_name:'Pocket Money', start_url:'.', display:'standalone', background_color:'#fce7f3', theme_color:'#fce7f3', icons:[{ src:'data:image/svg+xml;base64,'+iconB64, sizes:'512x512', type:'image/svg+xml', purpose:'any maskable' }] };
+document.getElementById('manifest-placeholder').href = URL.createObjectURL(new Blob([JSON.stringify(manifest)], { type:'application/json' }));
+
+// --- Constants ---
+const KIDS = [
+  { id:'jonas', name:'Jonas', emoji:'🚀' },
+  { id:'ella',  name:'Ella',  emoji:'🌸' },
+];
+const CURRENCY = 'CA$';
+const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+
+// --- Settings ---
+function loadSettings() {
+  try { const r = localStorage.getItem('pocket:settings'); if (r) return JSON.parse(r); } catch {}
+  return { perKid: false, weekly: { jonas: 1.00, ella: 1.00 } };
+}
+let settings = loadSettings();
+
+function initSettingsUI() {
+  const toggle = document.getElementById('per-kid-toggle');
+  toggle.checked = settings.perKid;
+  document.getElementById('weekly-both').value  = settings.weekly.jonas.toFixed(2);
+  document.getElementById('weekly-jonas').value = settings.weekly.jonas.toFixed(2);
+  document.getElementById('weekly-ella').value  = settings.weekly.ella.toFixed(2);
+  applyToggle();
+  toggle.addEventListener('change', applyToggle);
+}
+
+function applyToggle() {
+  const perKid = document.getElementById('per-kid-toggle').checked;
+  document.getElementById('same-row').style.display     = perKid ? 'none'  : 'flex';
+  document.getElementById('per-kid-rows').style.display = perKid ? 'block' : 'none';
+}
+
+function saveSettings() {
+  const perKid = document.getElementById('per-kid-toggle').checked;
+  let jonas, ella;
+  if (perKid) {
+    jonas = Math.max(0, parseFloat(document.getElementById('weekly-jonas').value) || 0);
+    ella  = Math.max(0, parseFloat(document.getElementById('weekly-ella').value)  || 0);
+  } else {
+    jonas = ella = Math.max(0, parseFloat(document.getElementById('weekly-both').value) || 0);
+  }
+  settings = { perKid, weekly: { jonas, ella } };
+  localStorage.setItem('pocket:settings', JSON.stringify(settings));
+  updateSubtitle();
+  const el = document.getElementById('save-confirm');
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 2000);
+}
+
+function getWeekly(kidId) { return settings.weekly[kidId] || 1; }
+
+function updateSubtitle() {
+  const sub = document.getElementById('subtitle');
+  if (settings.perKid && settings.weekly.jonas !== settings.weekly.ella) {
+    sub.textContent = `🚀 Jonas: ${CURRENCY}${settings.weekly.jonas.toFixed(2)}/wk · 🌸 Ella: ${CURRENCY}${settings.weekly.ella.toFixed(2)}/wk`;
+  } else {
+    sub.textContent = `${CURRENCY}${settings.weekly.jonas.toFixed(2)} added automatically every week`;
+  }
+}
+
+// --- Kid data ---
+function loadKid(id) {
+  try { const r = localStorage.getItem('pocket:'+id); if (r) return JSON.parse(r); } catch {}
+  return { balance:0, lastWeeklyAdd:Date.now(), history:[{ type:'init', amount:0, note:'Piggy bank started! 🐷', date:Date.now() }] };
+}
+function saveKid(id, d) { localStorage.setItem('pocket:'+id, JSON.stringify(d)); }
+function fmtDate(ts) { return new Date(ts).toLocaleDateString('en-CA', { month:'short', day:'numeric', year:'numeric' }); }
+function nextTopup(lastAdd) {
+  const rem = WEEK_MS - (Date.now() - lastAdd);
+  if (rem <= 0) return 'Any moment now!';
+  const days = Math.floor(rem / 86400000);
+  return days === 0 ? 'Today!' : `${days} day${days!==1?'s':''}`;
+}
+
+const states = {}, modes = {};
+
+function applyWeekly() {
+  const now = Date.now();
+  for (const kid of KIDS) {
+    const d = states[kid.id];
+    const elapsed = now - d.lastWeeklyAdd;
+    if (elapsed >= WEEK_MS) {
+      const weeks = Math.floor(elapsed / WEEK_MS);
+      const added = Math.round(weeks * getWeekly(kid.id) * 100) / 100;
+      d.balance = Math.round((d.balance + added) * 100) / 100;
+      d.lastWeeklyAdd += weeks * WEEK_MS;
+      d.history.unshift({ type:'weekly', amount:added, note: weeks>1 ? `${weeks}× Weekly allowance 🎉` : 'Weekly allowance 🎉', date:now });
+      saveKid(kid.id, d);
+    }
+  }
+}
+
+function renderHistory(kid) {
+  const list = document.getElementById('history-'+kid.id);
+  list.innerHTML = '';
+  states[kid.id].history.slice(0,20).forEach(h => {
+    const isNeg = h.type==='subtract';
+    const item = document.createElement('div');
+    item.className = 'history-item '+h.type;
+    item.innerHTML = `
+      <div>
+        <div class="history-note">${h.note}</div>
+        <div class="history-date">${fmtDate(h.date)}</div>
+      </div>
+      <div class="history-amount ${isNeg?'negative':'positive '+kid.id}">
+        ${isNeg?'-':'+'}${CURRENCY}${h.amount.toFixed(2)}
+      </div>`;
+    list.appendChild(item);
+  });
+}
+
+function renderBalance(kid) {
+  document.getElementById('balance-'+kid.id).textContent = CURRENCY+' '+states[kid.id].balance.toFixed(2);
+  document.getElementById('topup-'+kid.id).textContent = 'Next top-up: '+nextTopup(states[kid.id].lastWeeklyAdd);
+}
+
+function handleAction(kidId) {
+  const kid = KIDS.find(k=>k.id===kidId);
+  const input = document.getElementById('amount-'+kidId);
+  const noteEl = document.getElementById('note-'+kidId);
+  const val = parseFloat(input.value);
+  if (isNaN(val)||val<=0) { input.focus(); return; }
+  const mode = modes[kidId];
+  const d = states[kidId];
+  d.balance = Math.round((Math.max(0, d.balance + (mode==='subtract'?-val:val)))*100)/100;
+  d.history.unshift({ type:mode, amount:val, note:noteEl.value.trim()||(mode==='add'?'Added money':'Spent money'), date:Date.now() });
+  saveKid(kidId, d);
+  renderBalance(kid);
+  renderHistory(kid);
+  input.value=''; noteEl.value='';
+}
+
+function setMode(kidId, mode) {
+  modes[kidId] = mode;
+  ['add','subtract'].forEach(m => document.getElementById('btn-'+m+'-'+kidId).classList.toggle('active', m===mode));
+}
+
+function buildCard(kid) {
+  states[kid.id] = loadKid(kid.id);
+  modes[kid.id] = 'add';
+  const card = document.createElement('div');
+  card.className = 'card '+kid.id;
+  card.innerHTML = `
+    <div class="card-header">
+      <div class="avatar">${kid.emoji}</div>
+      <div>
+        <div class="kid-name">${kid.name}</div>
+        <div class="next-topup" id="topup-${kid.id}"></div>
+      </div>
+    </div>
+    <div class="balance-box">
+      <div class="balance-label">Balance</div>
+      <div class="balance-amount" id="balance-${kid.id}"></div>
+    </div>
+    <div class="mode-btns">
+      <button class="mode-btn active" id="btn-add-${kid.id}" onclick="setMode('${kid.id}','add')">➕ Add</button>
+      <button class="mode-btn" id="btn-subtract-${kid.id}" onclick="setMode('${kid.id}','subtract')">➖ Spend</button>
+    </div>
+    <div>
+      <div class="input-row">
+        <input type="number" id="amount-${kid.id}" min="0" step="0.01" placeholder="Amount">
+        <button class="ok-btn" onclick="handleAction('${kid.id}')">OK</button>
+      </div>
+      <div style="height:8px"></div>
+      <input type="text" id="note-${kid.id}" placeholder="What for? (optional)">
+    </div>
+    <div>
+      <div class="history-title">History</div>
+      <div class="history-list" id="history-${kid.id}"></div>
+    </div>`;
+  document.getElementById('cards').appendChild(card);
+  renderBalance(kid);
+  renderHistory(kid);
+}
+
+// Init
+KIDS.forEach(buildCard);
+initSettingsUI();
+applyWeekly();
+KIDS.forEach(kid => { renderBalance(kid); renderHistory(kid); });
+updateSubtitle();
+
+if ('serviceWorker' in navigator) {
+  const sw = `self.addEventListener('install',e=>self.skipWaiting());self.addEventListener('fetch',e=>e.respondWith(fetch(e.request).catch(()=>caches.match(e.request))));`;
+  navigator.serviceWorker.register(URL.createObjectURL(new Blob([sw],{type:'application/javascript'}))).catch(()=>{});
+}
+</script>
+</body>
+</html>
